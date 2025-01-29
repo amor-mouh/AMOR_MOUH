@@ -3,43 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حساب معدل الطالب الجامعي</title>
+    <title>حساب معدل الطالب</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>حساب معدل الطالب الجامعي</h1>
-        
-        <label for="subjectType">اختر نوع المادة:</label>
-        <select id="subjectType">
-            <option value="withLab">بها أعمال تطبيقية</option>
-            <option value="withoutLab">بدون أعمال تطبيقية</option>
-        </select>
-
-        <div id="withLabFields">
-            <label for="td">الأعمال الموجهة (20%)</label>
-            <input type="number" id="td" min="0" max="20">
-
-            <label for="tp">الأعمال التطبيقية (20%)</label>
-            <input type="number" id="tp" min="0" max="20">
-
-            <label for="exam">الاختبار (60%)</label>
-            <input type="number" id="exam" min="0" max="20">
-        </div>
-
-        <div id="withoutLabFields" style="display:none;">
-            <label for="tdOnly">الأعمال الموجهة (40%)</label>
-            <input type="number" id="tdOnly" min="0" max="20">
-
-            <label for="examOnly">الاختبار (60%)</label>
-            <input type="number" id="examOnly" min="0" max="20">
-        </div>
-
-        <button onclick="calculateGrade()">حساب المعدل</button>
-
-        <h2 id="result"></h2>
+        <h2>حساب معدل الطالب الجامعي</h2>
+        <form id="gradeForm">
+            <div class="subject">
+                <label>الفيزياء:</label>
+                <input type="number" id="phy_td" placeholder="أعمال موجهة">
+                <input type="number" id="phy_tp" placeholder="أعمال تطبيقية">
+                <input type="number" id="phy_exam" placeholder="الاختبار">
+            </div>
+            <div class="subject">
+                <label>الكيمياء:</label>
+                <input type="number" id="chem_td" placeholder="أعمال موجهة">
+                <input type="number" id="chem_tp" placeholder="أعمال تطبيقية">
+                <input type="number" id="chem_exam" placeholder="الاختبار">
+            </div>
+            <div class="subject">
+                <label>الإعلام الآلي:</label>
+                <input type="number" id="cs" placeholder="المعدل">
+            </div>
+            <div class="subject">
+                <label>الجبر:</label>
+                <input type="number" id="alg_tp" placeholder="أعمال تطبيقية">
+                <input type="number" id="alg_exam" placeholder="الاختبار">
+            </div>
+            <div class="subject">
+                <label>التحليل:</label>
+                <input type="number" id="ana_td" placeholder="أعمال موجهة">
+                <input type="number" id="ana_exam" placeholder="الاختبار">
+            </div>
+            <div class="subject">
+                <label>الاحتمالات:</label>
+                <input type="number" id="prob_td" placeholder="أعمال موجهة">
+                <input type="number" id="prob_exam" placeholder="الاختبار">
+            </div>
+            <div class="subject">
+                <label>الإنجليزية:</label>
+                <input type="number" id="eng" placeholder="المعدل">
+            </div>
+            <div class="subject">
+                <label>الأخلاقيات:</label>
+                <input type="number" id="ethics" placeholder="المعدل">
+            </div>
+            <button type="button" onclick="calculateGPA()">احسب المعدل</button>
+        </form>
+        <h3 id="result">معدلك: --</h3>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
