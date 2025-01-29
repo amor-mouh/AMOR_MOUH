@@ -1,5 +1,6 @@
 function getValue(id) {
-    return parseFloat(document.getElementById(id).value) || 0;
+    let value = parseFloat(document.getElementById(id).value);
+    return isNaN(value) ? 0 : value; // التأكد من عدم إرجاع NaN
 }
 
 function updatePhysics() {
@@ -57,5 +58,10 @@ function calculateFinalGPA() {
     let total = phy + chem + cs + alg + ana + prob + eng + ethics;
     let final_avg = total / 15; // مجموع المعاملات = 15
 
-    document.getElementById("final_result").innerText = "معدلك العام: " + final_avg.toFixed(2);
+    document.getElementById("final_result").innerText = "📌 معدلك العام: " + final_avg.toFixed(2);
 }
+
+// التأكد من حساب المعدل عند إدخال أي قيمة
+document.querySelectorAll("input").forEach(input => {
+    input.addEventListener("input", calculateFinalGPA);
+});
