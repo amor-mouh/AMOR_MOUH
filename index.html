@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب معدل الطالب الجامعي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حساب معدل الطالب الجامعي</h1>
+        
+        <label for="subjectType">اختر نوع المادة:</label>
+        <select id="subjectType">
+            <option value="withLab">بها أعمال تطبيقية</option>
+            <option value="withoutLab">بدون أعمال تطبيقية</option>
+        </select>
+
+        <div id="withLabFields">
+            <label for="td">الأعمال الموجهة (20%)</label>
+            <input type="number" id="td" min="0" max="20">
+
+            <label for="tp">الأعمال التطبيقية (20%)</label>
+            <input type="number" id="tp" min="0" max="20">
+
+            <label for="exam">الاختبار (60%)</label>
+            <input type="number" id="exam" min="0" max="20">
+        </div>
+
+        <div id="withoutLabFields" style="display:none;">
+            <label for="tdOnly">الأعمال الموجهة (40%)</label>
+            <input type="number" id="tdOnly" min="0" max="20">
+
+            <label for="examOnly">الاختبار (60%)</label>
+            <input type="number" id="examOnly" min="0" max="20">
+        </div>
+
+        <button onclick="calculateGrade()">حساب المعدل</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
