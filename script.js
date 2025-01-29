@@ -56,7 +56,7 @@ function calculateFinalGPA() {
     let ethics = getValue("ethics") * 1;
 
     let total = phy + chem + cs + alg + ana + prob + eng + ethics;
-    let final_avg = total / 15; // مجموع المعاملات = 15
+    let final_avg = total / 18; // 🔥 المجموع الصحيح للمعاملات هو 18
 
     document.getElementById("final_result").innerText = "📌 معدلك العام: " + final_avg.toFixed(2);
 }
