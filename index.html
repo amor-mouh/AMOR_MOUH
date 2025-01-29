@@ -12,15 +12,17 @@
         <form id="gradeForm">
             <div class="subject">
                 <label>الفيزياء:</label>
-                <input type="number" id="phy_td" placeholder="أعمال موجهة">
-                <input type="number" id="phy_tp" placeholder="أعمال تطبيقية">
-                <input type="number" id="phy_exam" placeholder="الاختبار">
+                <input type="number" id="phy_td" placeholder="أعمال موجهة" oninput="updatePhysics()">
+                <input type="number" id="phy_tp" placeholder="أعمال تطبيقية" oninput="updatePhysics()">
+                <input type="number" id="phy_exam" placeholder="الاختبار" oninput="updatePhysics()">
+                <p id="phy_result">معدل الفيزياء: --</p>
             </div>
             <div class="subject">
                 <label>الكيمياء:</label>
-                <input type="number" id="chem_td" placeholder="أعمال موجهة">
-                <input type="number" id="chem_tp" placeholder="أعمال تطبيقية">
-                <input type="number" id="chem_exam" placeholder="الاختبار">
+                <input type="number" id="chem_td" placeholder="أعمال موجهة" oninput="updateChemistry()">
+                <input type="number" id="chem_tp" placeholder="أعمال تطبيقية" oninput="updateChemistry()">
+                <input type="number" id="chem_exam" placeholder="الاختبار" oninput="updateChemistry()">
+                <p id="chem_result">معدل الكيمياء: --</p>
             </div>
             <div class="subject">
                 <label>الإعلام الآلي:</label>
@@ -28,18 +30,21 @@
             </div>
             <div class="subject">
                 <label>الجبر:</label>
-                <input type="number" id="alg_tp" placeholder="أعمال تطبيقية">
-                <input type="number" id="alg_exam" placeholder="الاختبار">
+                <input type="number" id="alg_tp" placeholder="أعمال تطبيقية" oninput="updateAlgebra()">
+                <input type="number" id="alg_exam" placeholder="الاختبار" oninput="updateAlgebra()">
+                <p id="alg_result">معدل الجبر: --</p>
             </div>
             <div class="subject">
                 <label>التحليل:</label>
-                <input type="number" id="ana_td" placeholder="أعمال موجهة">
-                <input type="number" id="ana_exam" placeholder="الاختبار">
+                <input type="number" id="ana_td" placeholder="أعمال موجهة" oninput="updateAnalysis()">
+                <input type="number" id="ana_exam" placeholder="الاختبار" oninput="updateAnalysis()">
+                <p id="ana_result">معدل التحليل: --</p>
             </div>
             <div class="subject">
                 <label>الاحتمالات:</label>
-                <input type="number" id="prob_td" placeholder="أعمال موجهة">
-                <input type="number" id="prob_exam" placeholder="الاختبار">
+                <input type="number" id="prob_td" placeholder="أعمال موجهة" oninput="updateProbability()">
+                <input type="number" id="prob_exam" placeholder="الاختبار" oninput="updateProbability()">
+                <p id="prob_result">معدل الاحتمالات: --</p>
             </div>
             <div class="subject">
                 <label>الإنجليزية:</label>
@@ -49,9 +54,9 @@
                 <label>الأخلاقيات:</label>
                 <input type="number" id="ethics" placeholder="المعدل">
             </div>
-            <button type="button" onclick="calculateGPA()">احسب المعدل</button>
+            <button type="button" onclick="calculateFinalGPA()">احسب المعدل العام</button>
         </form>
-        <h3 id="result">معدلك: --</h3>
+        <h3 id="final_result">معدلك العام: --</h3>
     </div>
     <script src="script.js"></script>
 </body>
