@@ -1,69 +1,149 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMOR_mouh</title>
+    <title>ST ING</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" tybe ="image/png" href="Designer (18).jpeg">
+    
 </head>
 <body>
-    <h1>💡 AMOR_MOUH </h1>
+    
+    <header>
+        <div class="bob">
+            <div class="box" id="box1"><a href="S2.html">S2</a></div>
+            <div class="box" id="box2"><a href="S3.html">S3</a></div>
+            <div class="box" id="box3"><a href="S4.html">S4</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="container section">
+            <h1>Physics 1</h1>
+            <form>
+                <label for="tdph">Mark td /20</label>
+                <input type="number" onkeyup="calculate()" id="tdph"  max="20" min="0" placeholder="TD/20"><br>
+                
+                <label for="exph">Exam/20</label>
+                <input type="number" onkeyup="calculate()" id="exph" max="20" min="0" placeholder="Exam/20"><br>
+                
+                <label for="tpph">Mark TP /20</label>
+                <input type="number" onkeyup="calculate()" id="tpph"  max="20" min="0" placeholder="TP/20"><br>
+                
+                <label for="fph">total of physics</label>
+                <input type="number" onkeyup="calculate()" id="fph"  max="20" min="0" placeholder="Final mark/20"><br>
+            </form>
+        </div>
+    
+        <div class="container section">
+            <h1>Chemistry 1</h1>
+            <form>
+                <label for="tdchime"> TD/20</label>
+                <input type="number" onkeyup="calculate()"  id="tdchime" max="20" min="0" placeholder="TD/20"><br>
+                
+                <label for="exchime">Exam/20</label>
+                <input type="number" onkeyup="calculate()" id="exchime" name="Exam/20" max="20" min="0" placeholder="Exam/20"><br>
+                
+                <label for="tpchime"> TP/20</label>
+                <input type="number" onkeyup="calculate()" id="tpchime"  max="20" min="0" placeholder="TP/20"><br>
+                
+                <label for="fchime">total of chemistry</label>
+                <input type="number" onkeyup="calculate()" id="fchime" max="20" min="0" placeholder="Final Mark/20"><br>
+            </form>
+        </div>
+    
+        <div class="container section">
+            <h1>Computer science</h1>
+            <form>
+                <label for="info"> Final mark/20</label>
+                <input type="number" onkeyup="calculate()" id="info" max="20" min="0" placeholder="Mark/20"><br>
+            </form>
+        </div>
+    
+        <div class="container section">
+            <h1>Algebre 1</h1>
+            <form>
+                <label for="tdalgebra">Td /20</label>
+                <input type="number" onkeyup="calculate()" id="tdalgebra"  max="20" min="0" placeholder="TD/20"><br>
+                
+                <label for="exalgebra">Exam/20</label>
+                <input type="number" onkeyup="calculate()" id="exalgebra"  max="20" min="0" placeholder="Exam mark/20">
+    
+                <label for="falgebra">Final mark algebra/20</label>
+                <input type="number" onkeyup="calculate()" id="falgebra"  max="20" min="0" placeholder="final Mark/20">
+    
+            </form>
+        </div>
+    
+        <div class="container section">
+            <h1>Analyse 1</h1>
+            <form>
+                <label for="tdcal"> Td /20</label>
+                <input type="number" onkeyup="calculate()" id="tdcal"  max="20" min="0" placeholder="TD/20"><br>
+                
+                <label for="excal">Exam/20</label>
+                <input type="number" onkeyup="calculate()" id="excal"  max="20" min="0" placeholder="Exam/20"><br>
+                
+                <label for="fcal">Final Mark Calculus /20</label>
+                <input type="number" onkeyup="calculate()" id="fcal" name="total_analyse" max="20" min="0" placeholder="final Mark/20"><br>
+            </form>
+        </div>
+    
+        <div class="container section">
+            <h1>Probability & Statistics</h1>
+            <form>
+                <label for="tdps"> td /20</label>
+                <input type="number" onkeyup="calculate()" id="tdps" max="20" min="0" placeholder="TD mark/20"><br>
+                
+                <label for="exps">Exam /20</label>
+                <input type="number" onkeyup="calculate()" id="exps" max="20" min="0" placeholder="Exam mark/20"><br>
+                
+                <label for="fps">Final Mark P&S</label>
+                <input type="number" onkeyup="calculate()" id="fps" max="20" min="0" placeholder="Final mark/20"><br>
+            </form>
+        
+    
+        </div>
+    
+        <div class="container section">
+            <h1>English</h1>
+            <form>
+                <label for="eng">Final Mark/20</label>
+                <input type="number" onkeyup="calculate()" id="eng"  max="20" min="0" placeholder="Final mark/20"><br>
+            </form>
+        </div>
+    
+        <div class="container section">
+            <h1>Ethics</h1>
+            <form>
+                <label for="eth">Exam Ethics</label>
+                <input type="number" onkeyup="calculate()" id="eth"  max="20" min="0" placeholder="Exam mark/20"><br>
+            </form>
+        </div>
+    
+        <div class="container section footer-note">
+            <h1>Total</h1>
+            <form>
+                <label for="total" style="margin-bottom: 10px;"><u>The Final Mark Is:</u></label>
+                <span type="number" id="total"></span>
+                <span id="message"></span>
+               <br>
+            </form>
+        </div>
+    
+        <script language="JavaScript" type="text/javascript" src="index.js"></script>
+    </main>
+    <footer>
+        <h3><a href="https://www.instagram.com/amor_mouh/" id="a1">Click for my instagram</a></h3>
+        
+    </footer>
+ 
+   
 
-    <div class="subject">
-        <h2>🔬 الفيزياء</h2>
-        <input type="number" id="phy_td" placeholder="الأعمال الموجهة">
-        <input type="number" id="phy_tp" placeholder="الأعمال التطبيقية">
-        <input type="number" id="phy_exam" placeholder="الامتحان">
-        <p id="phy_result">معدل الفيزياء: 0.00</p>
-    </div>
 
-    <div class="subject">
-        <h2>🧪 الكيمياء</h2>
-        <input type="number" id="chem_td" placeholder="الأعمال الموجهة">
-        <input type="number" id="chem_tp" placeholder="الأعمال التطبيقية">
-        <input type="number" id="chem_exam" placeholder="الامتحان">
-        <p id="chem_result">معدل الكيمياء: 0.00</p>
-    </div>
+     
+       
 
-    <div class="subject">
-        <h2>📊 الجبر</h2>
-        <input type="number" id="alg_tp" placeholder="الأعمال الموجهة">
-        <input type="number" id="alg_exam" placeholder="الامتحان">
-        <p id="alg_result">معدل الجبر: 0.00</p>
-    </div>
 
-    <div class="subject">
-        <h2>📈 التحليل</h2>
-        <input type="number" id="ana_td" placeholder="الأعمال الموجهة">
-        <input type="number" id="ana_exam" placeholder="الامتحان">
-        <p id="ana_result">معدل التحليل: 0.00</p>
-    </div>
-
-    <div class="subject">
-        <h2>🎲 الاحتمالات</h2>
-        <input type="number" id="prob_td" placeholder="الأعمال الموجهة">
-        <input type="number" id="prob_exam" placeholder="الامتحان">
-        <p id="prob_result">معدل الاحتمالات: 0.00</p>
-    </div>
-
-    <div class="subject">
-        <h2>💻 الإعلام الآلي</h2>
-        <input type="number" id="cs" placeholder="المعدل">
-    </div>
-
-    <div class="subject">
-        <h2>📚 الإنجليزية</h2>
-        <input type="number" id="eng" placeholder="المعدل">
-    </div>
-
-    <div class="subject">
-        <h2>⚖️ الأخلاقيات</h2>
-        <input type="number" id="ethics" placeholder="المعدل">
-    </div>
-
-    <button onclick="updateFinalGPA()">📊 حساب المعدل العام</button>
-    <p id="final_result">📌 معدلك العام: 0.00</p>
-
-    <script src="script.js"></script>
 </body>
 </html>
