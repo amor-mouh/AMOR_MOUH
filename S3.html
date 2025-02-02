@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب معدل S3</title>
+    <link rel="stylesheet" href="s3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="nav-header">
+            <a href="index.html" class="nav-link"><i class="fas fa-arrow-left"></i> S1</a>
+            <a href="S2.html" class="nav-link">S2</a>
+            <a href="S4.html" class="nav-link">S4 <i class="fas fa-arrow-right"></i></a>
+        </header>
+
+        <h1 class="title">حاسوب معدل السداسي الثالث</h1>
+
+        <!-- حساب التفاضل 3 -->
+        <div class="subject-card">
+            <h2><i class="fas fa-calculator"></i> حساب التفاضل 3</h2>
+            <div class="input-group">
+                <div class="input-item">
+                    <label>TD:</label>
+                    <input type="number" id="tdcal" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>Exam:</label>
+                    <input type="number" id="excal" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>النتيجة:</label>
+                    <input type="text" id="fcal" readonly class="result-input">
+                </div>
+            </div>
+        </div>
+
+        <!-- الحساب العددي 1 -->
+        <div class="subject-card">
+            <h2><i class="fas fa-superscript"></i> الحساب العددي 1</h2>
+            <div class="input-group">
+                <div class="input-item">
+                    <label>TD:</label>
+                    <input type="number" id="tdph" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>Exam:</label>
+                    <input type="number" id="exph" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>TP:</label>
+                    <input type="number" id="tpph" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>النتيجة:</label>
+                    <input type="text" id="fph" readonly class="result-input">
+                </div>
+            </div>
+        </div>
+
+        <!-- الاهتزازات -->
+        <div class="subject-card">
+            <h2><i class="fas fa-wave-square"></i> الاهتزازات</h2>
+            <div class="input-group">
+                <div class="input-item">
+                    <label>TD:</label>
+                    <input type="number" id="tdchime" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>Exam:</label>
+                    <input type="number" id="exchime" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>TP:</label>
+                    <input type="number" id="tpchime" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>النتيجة:</label>
+                    <input type="text" id="fchime" readonly class="result-input">
+                </div>
+            </div>
+        </div>
+
+        <!-- ميكانيك الموائع -->
+        <div class="subject-card">
+            <h2><i class="fas fa-water"></i> ميكانيك الموائع</h2>
+            <div class="input-group">
+                <div class="input-item">
+                    <label>TD:</label>
+                    <input type="number" id="tdmdf" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>Exam:</label>
+                    <input type="number" id="exmdf" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>TP:</label>
+                    <input type="number" id="tpmdf" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>النتيجة:</label>
+                    <input type="text" id="fmdf" readonly class="result-input">
+                </div>
+            </div>
+        </div>
+
+        <!-- الميكانيك العقلاني -->
+        <div class="subject-card">
+            <h2><i class="fas fa-cogs"></i> الميكانيك العقلاني</h2>
+            <div class="input-group">
+                <div class="input-item">
+                    <label>TD:</label>
+                    <input type="number" id="tdalgebra" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>Exam:</label>
+                    <input type="number" id="exalgebra" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>النتيجة:</label>
+                    <input type="text" id="falgebra" readonly class="result-input">
+                </div>
+            </div>
+        </div>
+
+        <!-- الإعلام الآلي -->
+        <div class="subject-card">
+            <h2><i class="fas fa-laptop-code"></i> الإعلام الآلي</h2>
+            <div class="input-group">
+                <div class="input-item">
+                    <label>TD:</label>
+                    <input type="number" id="tdinfo" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>Exam:</label>
+                    <input type="number" id="exinfo" step="0.01" max="20">
+                </div>
+                <div class="input-item">
+                    <label>النتيجة:</label>
+                    <input type="text" id="finfo" readonly class="result-input">
+                </div>
+            </div>
+        </div>
+
+        <!-- DAO -->
+        <div class="subject-card">
+            <h2><i class="fas fa-drafting-compass"></i> DAO</h2>
+            <div class="input-group">
+                <div class="input-item">
+                    <label>النقطة النهائية:</label>
+                    <input type="number" id="fds" step="0.01" max="20">
+                </div>
+            </div>
+        </div>
+
+        <!-- الإنجليزية 3 -->
+        <div class="subject-card">
+            <h2><i class="fas fa-language"></i> الإنجليزية 3</h2>
+            <div class="input-group">
+                <div class="input-item">
+                    <label>النقطة النهائية:</label>
+                    <input type="number" id="eng" step="0.01" max="20">
+                </div>
+            </div>
+        </div>
+
+        <!-- النتيجة -->
+        <div class="result-card">
+            <h2 id="total">0.00</h2>
+            <p id="message"></p>
+            <button onclick="calculate()"><i class="fas fa-calculator"></i> احسب المعدل</button>
+        </div>
+
+        <footer class="site-footer">
+            <a href="https://www.instagram.com/amor_mouh/" target="_blank">
+                <i class="fab fa-instagram"></i> حساب الإنستجرام
+            </a>
+        </footer>
+    </div>
+
+    <script src="s3.js"></script>
+</body>
+</html>
